@@ -112,7 +112,29 @@ done
   fi
 
   echo
-  echo "## 4) 审计结论"
+  echo "## 4) 分发一致性检查（可选）"
+  echo
+  mirror_dir="${HOME}/.codex/skills"
+  if [[ -d "$mirror_dir" ]]; then
+    mapfile -t missing_in_mirror < <(
+      comm -23 \
+        <(find . -maxdepth 1 -type d -name 'ipd-*' -printf '%f\n' | sort) \
+        <(find "$mirror_dir" -maxdepth 1 -type d -name 'ipd-*' -printf '%f\n' | sort)
+    )
+    if (( ${#missing_in_mirror[@]} == 0 )); then
+      echo "- 与镜像目录 \`$mirror_dir\` 一致。"
+    else
+      echo "- 在源目录存在但镜像目录缺失的 Skill："
+      for s in "${missing_in_mirror[@]}"; do
+        echo "  - ${s}"
+      done
+    fi
+  else
+    echo "- 未检测到镜像目录 \`$mirror_dir\`，跳过该检查。"
+  fi
+
+  echo
+  echo "## 5) 审计结论"
   echo
   echo "- 技能库完整可用，核心角色齐全。"
   echo "- 结构总体一致，但篇幅差异较大（建议后续统一模板粒度）。"
