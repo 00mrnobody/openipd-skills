@@ -2,11 +2,12 @@
 set -euo pipefail
 ROOT="${1:-.}"
 cd "$ROOT"
+SKILLS_DIR="${SKILLS_DIR:-skills}"
 DATE="$(date +%F)"
 OUT="docs/AUDIT_REPORT_${DATE}.md"
 mkdir -p docs
 
-mapfile -t skills < <(find . -maxdepth 1 -type d -name 'ipd-*' -printf '%f\n' | sort)
+mapfile -t skills < <(find "$SKILLS_DIR" -maxdepth 1 -type d -name 'ipd-*' -printf '%f\n' | sort)
 count=${#skills[@]}
 
 required=(
@@ -25,14 +26,14 @@ required=(
 
 missing=()
 for r in "${required[@]}"; do
-  [[ -f "$r/SKILL.md" ]] || missing+=("$r")
+  [[ -f "$SKILLS_DIR/$r/SKILL.md" ]] || missing+=("$r")
 done
 
 {
   echo "# OpenIPD Skills 审计报告"
   echo
   echo "- 审计日期: ${DATE}"
-  echo '- 审计范围: `ipd-*/SKILL.md`'
+  echo "- 审计范围: \`$SKILLS_DIR/ipd-*/SKILL.md\`"
   echo "- 技能总数: ${count}"
   echo
 
@@ -60,7 +61,7 @@ done
   min_skill=""
 
   for s in "${skills[@]}"; do
-    f="$s/SKILL.md"
+    f="$SKILLS_DIR/$s/SKILL.md"
     if [[ -f "$f" ]]; then
       lines=$(wc -l < "$f" | tr -d ' ')
       headers=$(rg -n '^##|^###' "$f" | wc -l | tr -d ' ')
@@ -89,7 +90,7 @@ done
   echo "|---|---:|---:|---:|---:|---:|"
 
   for s in "${skills[@]}"; do
-    f="$s/SKILL.md"
+    f="$SKILLS_DIR/$s/SKILL.md"
     role=$(rg -q '角色定位|角色定义' "$f" && echo Y || echo N)
     duty=$(rg -q '主要职责|职责|核心使命|使命' "$f" && echo Y || echo N)
     ability=$(rg -q '关键能力|能力' "$f" && echo Y || echo N)
@@ -101,7 +102,7 @@ done
   echo
   echo "### 3.2 风险提示"
   echo
-  todo_hits=$(rg -n 'TODO|TBD|FIXME|待补充|待完善' ipd-*/SKILL.md || true)
+  todo_hits=$(rg -n 'TODO|TBD|FIXME|待补充|待完善' "$SKILLS_DIR"/ipd-*/SKILL.md || true)
   if [[ -z "$todo_hits" ]]; then
     echo "- 未发现明显占位词（TODO/TBD/FIXME/待补充）。"
   else
@@ -118,7 +119,7 @@ done
   if [[ -d "$mirror_dir" ]]; then
     mapfile -t missing_in_mirror < <(
       comm -23 \
-        <(find . -maxdepth 1 -type d -name 'ipd-*' -printf '%f\n' | sort) \
+        <(find "$SKILLS_DIR" -maxdepth 1 -type d -name 'ipd-*' -printf '%f\n' | sort) \
         <(find "$mirror_dir" -maxdepth 1 -type d -name 'ipd-*' -printf '%f\n' | sort)
     )
     if (( ${#missing_in_mirror[@]} == 0 )); then

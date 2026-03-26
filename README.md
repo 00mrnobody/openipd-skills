@@ -2,11 +2,11 @@
 
 OpenIPD Skills 是一套面向 IPD（集成产品开发）流程的多角色 AI Skill 定义集合，覆盖产品从概念、计划、开发、验证到发布和生命周期管理的关键角色职责。
 
-## 项目状态（2026-03-25 审计）
+## 项目状态（2026-03-26 审计）
 
 - Skill 总数：`19`
 - 核心 11 角色：`全部存在`
-- 审计报告：`docs/AUDIT_REPORT_2026-03-25.md`
+- 审计报告：`docs/AUDIT_REPORT_2026-03-26.md`
 - 角色索引：`docs/ROLE_INDEX.md`
 
 ## 核心角色（11）
@@ -29,16 +29,23 @@ OpenIPD Skills 是一套面向 IPD（集成产品开发）流程的多角色 AI 
 
 ## 目录说明
 
-- `ipd-*/SKILL.md`：各角色 Skill 定义
+- `skills/ipd-*/SKILL.md`：各角色 Skill 定义
 - `docs/AUDIT_REPORT_YYYY-MM-DD.md`：自动化审计输出
 - `docs/ROLE_INDEX.md`：角色与文件映射
 - `scripts/audit-skills.sh`：审计脚本
+- `examples/openclaw-desktop-sprite-demo/`：桌面精灵示例 Demo
+- `reports/analysis/`：审计与结构分析报告
 
 ## 来源与分发
 
 - 系统级来源目录：`/home/devuser/.config/agents/skills/`
 - 本仓库是审计与发布快照
 - 审计发现：`.codex/skills` 当前缺少 `ipd-orchestrator`
+
+## Demo 示例
+
+- 示例目录：`examples/openclaw-desktop-sprite-demo/`
+- Demo 审计报告：`reports/analysis/DEMO_AUDIT_2026-03-26.md`
 
 ## 使用方式
 

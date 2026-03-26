@@ -114,9 +114,10 @@ export CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 mkdir -p "$CODEX_HOME/skills"
 
 # 3) 安装（覆盖同名）
-for d in ipd-*; do
-  rm -rf "$CODEX_HOME/skills/$d"
-  cp -r "$d" "$CODEX_HOME/skills/$d"
+for d in skills/ipd-*; do
+  name="$(basename "$d")"
+  rm -rf "$CODEX_HOME/skills/$name"
+  cp -r "$d" "$CODEX_HOME/skills/$name"
 done
 
 # 4) 验证
@@ -135,9 +136,10 @@ cd /data/workspace/users/devuser-home/codex-ws/2026/0325-2347-openipd-skills-aud
 
 # 2) 安装
 mkdir -p ~/.config/agents/skills
-for d in ipd-*; do
-  rm -rf ~/.config/agents/skills/$d
-  cp -r "$d" ~/.config/agents/skills/$d
+for d in skills/ipd-*; do
+  name="$(basename "$d")"
+  rm -rf ~/.config/agents/skills/$name
+  cp -r "$d" ~/.config/agents/skills/$name
 done
 
 # 3) 验证
@@ -155,9 +157,10 @@ Open Cloud 可能有两种接入形态，按实际部署选其一：
 ```bash
 # 安装到 ~/.config/agents/skills
 mkdir -p ~/.config/agents/skills
-for d in ipd-*; do
-  rm -rf ~/.config/agents/skills/$d
-  cp -r "$d" ~/.config/agents/skills/$d
+for d in skills/ipd-*; do
+  name="$(basename "$d")"
+  rm -rf ~/.config/agents/skills/$name
+  cp -r "$d" ~/.config/agents/skills/$name
 done
 ```
 
@@ -168,7 +171,7 @@ done
 3. 将技能根目录设为仓库根（包含 `ipd-*` 文件夹）。
 4. 重新加载 Agent Runtime 后验证 `ipd-orchestrator` 可见。
 
-> 说明：不同 Open Cloud 部署的导入界面字段名可能不同，但核心是“让 runtime 看到 `ipd-*/SKILL.md` 目录结构”。
+> 说明：不同 Open Cloud 部署的导入界面字段名可能不同，但核心是“让 runtime 看到 `skills/ipd-*/SKILL.md` 目录结构”。
 
 ## 附：这套技能的结构速览
 
