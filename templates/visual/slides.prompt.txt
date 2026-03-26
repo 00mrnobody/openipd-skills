@@ -1,0 +1,14 @@
+Create a slide-ready visual page for role {{ROLE}}.
+
+Project brief:
+{{BRIEF}}
+
+Slide content cues:
+{{BULLETS}}
+
+Output constraints:
+- Mode: {{MODE}}
+- Aspect ratio target: 16:9
+- Strong visual hierarchy for presentation use
+- Include one headline, 3-5 supporting blocks, one summary strip
+- Keep typography large enough for projection

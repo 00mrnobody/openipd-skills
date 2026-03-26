@@ -1,0 +1,16 @@
+You are a senior industrial visualization artist.
+Create a high-fidelity product render image for role {{ROLE}}.
+
+Project brief:
+{{BRIEF}}
+
+Key requirements:
+{{BULLETS}}
+
+Output constraints:
+- Mode: {{MODE}}
+- Visual style: professional, product-launch quality
+- Lighting: cinematic but realistic
+- Composition: clear hero subject, uncluttered background
+- Add no logos or copyrighted brand marks
+- Ensure text in image is minimal and legible

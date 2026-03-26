@@ -123,3 +123,43 @@ metadata:
 1. **先验证再放行**：制造结论必须建立在真实验证之上
 2. **问题不转嫁**：制造问题要推动跨领域共同闭环
 3. **发布有把握**：制造 readiness 结论必须客观审慎
+
+## 视觉化输出扩展（Gemini渲染/信息图/Slides）
+
+当用户明确提出以下诉求时，不仅输出文档，还要提供视觉化资产：
+- 产品渲染图（render）
+- Notion版式信息图（infographic）
+- 可直接用于演示的单页视觉（slides）
+
+### 执行约束
+
+1. 先产出结构化要点（标题、3-8条要点、关键数字）。
+2. 再调用视觉模板 + 图像API生成视觉资产。
+3. 输出时同时给出：
+   - 视觉图文件路径
+   - 对应提示词文件路径
+   - 与文档结论的映射关系
+
+### 推荐调用方式
+
+```bash
+# 单图生成（精细控制）
+scripts/gemini-image-generate.sh \
+  --prompt-file templates/visual/infographic.prompt.txt \
+  --out tmp-outputs/visual/<role>-infographic-1.png
+
+# 批量生成（按角色/模式）
+scripts/openipd-visual-pack.sh \
+  --role <ROLE> \
+  --mode <render|infographic|slides> \
+  --brief "<项目简述>" \
+  --bullets "<要点1;要点2;要点3>" \
+  --outdir tmp-outputs/visual/<role> \
+  --count 3
+```
+
+### 安全要求（强制）
+
+- 只允许从环境变量读取 `GEMINI_API_KEY`。
+- 禁止在提示词、日志、文档中输出密钥明文。
+- 禁止把任何密钥写入仓库文件。

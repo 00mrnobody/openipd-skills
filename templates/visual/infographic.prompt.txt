@@ -1,0 +1,15 @@
+Create a Notion-style infographic image for role {{ROLE}}.
+
+Project brief:
+{{BRIEF}}
+
+Key points to visualize:
+{{BULLETS}}
+
+Output constraints:
+- Mode: {{MODE}}
+- Style: clean, information-dense, card-based layout
+- Hierarchy: title > sections > key metrics > callouts
+- Palette: neutral + one accent color
+- Include icons, timeline/flow where relevant
+- Keep all labels concise and readable
