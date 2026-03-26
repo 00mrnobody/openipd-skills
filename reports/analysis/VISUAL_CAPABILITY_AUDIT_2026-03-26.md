@@ -14,7 +14,7 @@
 - `templates/visual/*`
 - `scripts/gemini-image-generate.sh`
 - `scripts/openipd-visual-pack.sh`
-- `docs/OPENIPD_VISUAL_PIPELINE.md`
+- `docs/guides/visual-pipeline.md`
 
 ## 结果
 

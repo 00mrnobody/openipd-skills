@@ -4,6 +4,16 @@
 
 ---
 
+## 快速导航
+
+- 快速使用（安装/调用）：`docs/getting-started/quickstart.md`
+- 角色索引（19 个 Skill）：`docs/reference/role-index.md`
+- 视觉输出能力：`docs/guides/visual-pipeline.md`
+- 审计报告：`reports/analysis/`
+- 示例 Demo：`examples/openclaw-desktop-sprite-demo/`
+
+---
+
 ## 01 一个值得关注的信号
 
 在大型科技与制造企业中，结构化产品开发流程是主流做法，常见形式包括IPD及类似的阶段评审机制。
