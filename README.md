@@ -106,9 +106,9 @@ AI同样有局限——会幻觉、会过度自信、会缺乏全局视角。**O
 
 AI生成的产品概念和内部结构规格：
 
-![OpenClaw晨间场景](03-视觉交付/A方案-桌面精灵渲染套图-11张/outputs/01-scene-morning.png)
+![OpenClaw晨间场景](assets/readme/01-scene-morning.png)
 
-![OpenClaw剖面图](03-视觉交付/A方案-桌面精灵渲染套图-11张/outputs/06-cutaway-mainboard.png)
+![OpenClaw剖面图](assets/readme/06-cutaway-mainboard.png)
 
 **OpenClaw桌面精灵**——圆润白色机身、粉色猫耳、表情屏幕、双轮底盘。AI定义了内部结构：RK3576主控、8GB内存、3000mAh电池、双电机底盘。
 
@@ -118,11 +118,11 @@ AI生成的产品概念和内部结构规格：
 
 传统需要2-4周的市场分析报告：
 
-![MKTPDT市场分析P1](01-角色产出/市场代表-MKTPDT/Notion图像与提示词/images/001-openclaw-mkt-analysis-p001.png)
+![MKTPDT市场分析P1](assets/readme/001-openclaw-mkt-analysis-p001.png)
 
-![MKTPDT市场分析P2](01-角色产出/市场代表-MKTPDT/Notion图像与提示词/images/002-openclaw-mkt-analysis-p002.png)
+![MKTPDT市场分析P2](assets/readme/002-openclaw-mkt-analysis-p002.png)
 
-![MKTPDT市场分析P3](01-角色产出/市场代表-MKTPDT/Notion图像与提示词/images/003-openclaw-mkt-analysis-p003.png)
+![MKTPDT市场分析P3](assets/readme/003-openclaw-mkt-analysis-p003.png)
 
 市场规模38.66亿元、年增148%、竞品矩阵、定价策略——系统自主完成。
 
@@ -132,27 +132,27 @@ AI生成的产品概念和内部结构规格：
 
 传统需要1-2个月的硬件设计规格：
 
-![HW BOM分析](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/004-BOM-Cost-Analysis-p001.png)
+![HW BOM分析](assets/readme/004-BOM-Cost-Analysis-p001.png)
 
-![HW开发计划](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/005-Dev-Plan-Risk-p001.png)
+![HW开发计划](assets/readme/005-Dev-Plan-Risk-p001.png)
 
-![HW开发计划P2](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/006-Dev-Plan-Risk-p002.png)
+![HW开发计划P2](assets/readme/006-Dev-Plan-Risk-p002.png)
 
-![HW设计规格P1](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/007-HW-Design-Spec-v1.0-p001.png)
+![HW设计规格P1](assets/readme/007-HW-Design-Spec-v1.0-p001.png)
 
-![HW设计规格P2](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/008-HW-Design-Spec-v1.0-p002.png)
+![HW设计规格P2](assets/readme/008-HW-Design-Spec-v1.0-p002.png)
 
-![HW设计规格P3](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/009-HW-Design-Spec-v1.0-p003.png)
+![HW设计规格P3](assets/readme/009-HW-Design-Spec-v1.0-p003.png)
 
-![HW设计规格P4](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/010-HW-Design-Spec-v1.0-p004.png)
+![HW设计规格P4](assets/readme/010-HW-Design-Spec-v1.0-p004.png)
 
-![HW设计规格P5](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/011-HW-Design-Spec-v1.0-p005.png)
+![HW设计规格P5](assets/readme/011-HW-Design-Spec-v1.0-p005.png)
 
-![系统架构P1](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/012-System-Architecture-p001.png)
+![系统架构P1](assets/readme/012-System-Architecture-p001.png)
 
-![系统架构P2](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/013-System-Architecture-p002.png)
+![系统架构P2](assets/readme/013-System-Architecture-p002.png)
 
-![系统架构P3](01-角色产出/硬件工程师-HW/Notion图像与提示词/images/014-System-Architecture-p003.png)
+![系统架构P3](assets/readme/014-System-Architecture-p003.png)
 
 原理图、BOM清单、系统架构、风险评估——理论上可直接进入工厂打样环节。
 
@@ -160,17 +160,17 @@ AI生成的产品概念和内部结构规格：
 
 ### 软件工程师-SW的输出
 
-![SW设计文档P1](01-角色产出/软件工程师-SW/Notion图像与提示词/images/015-software-design-document-p001.png)
+![SW设计文档P1](assets/readme/015-software-design-document-p001.png)
 
-![SW设计文档P2](01-角色产出/软件工程师-SW/Notion图像与提示词/images/016-software-design-document-p002.png)
+![SW设计文档P2](assets/readme/016-software-design-document-p002.png)
 
-![SW设计文档P3](01-角色产出/软件工程师-SW/Notion图像与提示词/images/017-software-design-document-p003.png)
+![SW设计文档P3](assets/readme/017-software-design-document-p003.png)
 
-![SW设计文档P4](01-角色产出/软件工程师-SW/Notion图像与提示词/images/018-software-design-document-p004.png)
+![SW设计文档P4](assets/readme/018-software-design-document-p004.png)
 
-![SW设计文档P5](01-角色产出/软件工程师-SW/Notion图像与提示词/images/019-software-design-document-p005.png)
+![SW设计文档P5](assets/readme/019-software-design-document-p005.png)
 
-![SW设计文档P6](01-角色产出/软件工程师-SW/Notion图像与提示词/images/020-software-design-document-p006.png)
+![SW设计文档P6](assets/readme/020-software-design-document-p006.png)
 
 云端AI架构、本地算法选型、成本优化策略——完整的软件工程文档框架。
 
@@ -178,17 +178,17 @@ AI生成的产品概念和内部结构规格：
 
 ### LPDT-产品经理的输出
 
-![PDCP商业计划P1](01-角色产出/LPDT-产品经理/Notion图像与提示词/images/021-Openclaw-AI-Pet-PDCP-Business-Plan-p001.png)
+![PDCP商业计划P1](assets/readme/021-Openclaw-AI-Pet-PDCP-Business-Plan-p001.png)
 
-![PDCP商业计划P2](01-角色产出/LPDT-产品经理/Notion图像与提示词/images/022-Openclaw-AI-Pet-PDCP-Business-Plan-p002.png)
+![PDCP商业计划P2](assets/readme/022-Openclaw-AI-Pet-PDCP-Business-Plan-p002.png)
 
-![PDCP商业计划P3](01-角色产出/LPDT-产品经理/Notion图像与提示词/images/023-Openclaw-AI-Pet-PDCP-Business-Plan-p003.png)
+![PDCP商业计划P3](assets/readme/023-Openclaw-AI-Pet-PDCP-Business-Plan-p003.png)
 
-![PDCP商业计划P4](01-角色产出/LPDT-产品经理/Notion图像与提示词/images/024-Openclaw-AI-Pet-PDCP-Business-Plan-p004.png)
+![PDCP商业计划P4](assets/readme/024-Openclaw-AI-Pet-PDCP-Business-Plan-p004.png)
 
-![PDCP商业计划P5](01-角色产出/LPDT-产品经理/Notion图像与提示词/images/025-Openclaw-AI-Pet-PDCP-Business-Plan-p005.png)
+![PDCP商业计划P5](assets/readme/025-Openclaw-AI-Pet-PDCP-Business-Plan-p005.png)
 
-![PDCP商业计划P6](01-角色产出/LPDT-产品经理/Notion图像与提示词/images/026-Openclaw-AI-Pet-PDCP-Business-Plan-p006.png)
+![PDCP商业计划P6](assets/readme/026-Openclaw-AI-Pet-PDCP-Business-Plan-p006.png)
 
 80页商业计划书框架、IRR 68%、投资回收期18个月——可作为融资讨论的基础材料。
 
