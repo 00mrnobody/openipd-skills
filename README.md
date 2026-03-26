@@ -4,6 +4,20 @@
 
 ---
 
+## 数据口径（2026-03-26校对）
+
+- 角色技能总数：`19`
+- 核心执行角色：`8`（MKTPDT/SE/FPDT/HW/SW/MNFPDT/PROPDT/LPDT）
+- 决策层角色：`3`（IRB/IPMT/PAC）
+- PDT核心管理角色：`4`（LPDT/SE/PQA/POP）
+- 功能代表角色：`7`
+- 扩展角色：`4`（CCM/HW/SW/TD）
+- 编排器：`1`（ipd-orchestrator）
+- 示例 Demo 核心文档：`7` 份（`examples/openclaw-desktop-sprite-demo/01~07`）
+- README 配图：`28` 张（`assets/readme/*.png`）
+
+---
+
 ## 01 这个问题困扰了所有人
 
 在大型科技与制造企业中，跨职能并行开发和阶段评审是主流做法。  
